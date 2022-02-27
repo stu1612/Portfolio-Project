@@ -2,7 +2,6 @@ import { Paragraph } from "../components/UI/atoms/Paragraph";
 import { Title1, Title2, Title3 } from "../components/UI/atoms/Title/index";
 
 import Card from "../components/templates/Card/Card";
-// import Modal from "../components/templates/Modal/Modal";
 
 export default function Home({ data }) {
   return (
@@ -16,12 +15,6 @@ export default function Home({ data }) {
         data.map((project) => (
           <Card key={project.id} project={project} data={data} />
         ))}
-
-      {/* {showModal && (
-        <Modal >
-          <Title1 text="Hello Modal" />
-          <button onClick={handleCloseModal}>close</button>
-        </Modal> */}
     </div>
   );
 }
