@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cl-black: #1b1b1b;
+  --cl-green: #43d998;
+  --cl-yellow: #ffce30;
+  --cl-blue: #b1d3e3;
+  --cl-white: #e7e7e7;
+}
+
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--cl-white);
+}
+
+p,
+span,
+a {
+  font-family: "Poppins", sans-serif;
+  color: var(--cl-white);
+}

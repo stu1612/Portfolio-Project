@@ -1,3 +1,21 @@
 .title_1 {
-  color: red;
+  font-size: clamp(2.2rem, 10vw, 6rem);
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: clamp(3.5rem, 10vw, 9.6rem);
+  letter-spacing: 4px;
+}
+
+.title_2 {
+  font-size: clamp(1.8rem, 10vw, 3rem);
+  font-weight: 400;
+  line-height: clamp(2.9rem, 10vw, 4.8rem);
+  letter-spacing: 1px;
+}
+
+.title_3 {
+  font-size: clamp(1.6rem, 10vw, 2.4rem);
+  font-weight: 400;
+  line-height: clamp(2.6rem, 10vw, 3.8rem);
+  letter-spacing: 0.4px;
 }
