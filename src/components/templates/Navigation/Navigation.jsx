@@ -1,49 +1,24 @@
+import { useState, useEffect } from "react";
+// data
+import NavLinksData from "../../../data/navLinksData";
+// scripts
+import scrollToLocation from "../../../scripts/scrollToLocation";
+// style
 import "./style.css";
 
 export default function Navigation() {
-  const links = [
-    {
-      id: 1,
-      text: "home",
-      url: "#home",
-    },
-    {
-      id: 2,
-      text: "about",
-      url: "#about",
-    },
-    {
-      id: 3,
-      text: "projects",
-      url: "#projects",
-    },
-    {
-      id: 4,
-      text: "tech",
-      url: "#tech",
-    },
-    {
-      id: 5,
-      text: "contact",
-      url: "#contact",
-    },
-  ];
+  const [links, setLinks] = useState([]);
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    const target = e.target.getAttribute("href");
-    const location = document.querySelector(target).offsetTop;
-    window.scrollTo({
-      left: 0,
-      top: location - 70,
-    });
-  };
+  useEffect(() => {
+    setLinks(NavLinksData);
+  }, []);
+
   return (
     <div className="nav">
       <ul className="nav-links">
         {links.map((link) => (
           <li key={link.id}>
-            <a href={link.url} onClick={handleClick}>
+            <a href={link.url} onClick={scrollToLocation}>
               {link.text}
             </a>
           </li>

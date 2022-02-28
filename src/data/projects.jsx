@@ -1,4 +1,4 @@
-export default function ProjectData() {
+export default function Projects() {
   return [
     {
       id: 1,

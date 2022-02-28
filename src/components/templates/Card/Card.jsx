@@ -1,5 +1,6 @@
+// npm
 import { Link } from "react-router-dom";
-
+// styles
 import { Title2 } from "../../UI/atoms/Title";
 import "./style.css";
 

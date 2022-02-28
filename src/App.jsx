@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./screens/Home";
 import "./App.css";
 import Modal from "./components/templates/Modal/Modal";
-import ProjectData from "./data/projectData";
+import Projects from "./data/projects";
 import Navigation from "./components/templates/Navigation/Navigation";
 
 export default function App() {
-  const [data, setData] = useState([]);
+  const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
-    setData(ProjectData);
+    setProjectData(Projects);
   }, []);
 
   return (
@@ -18,8 +18,9 @@ export default function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/" element={<Home data={data} />} />
-          <Route path="/:title" element={<Modal data={data} />} />
+          <Route path="/stu1612" element={<Home data={projectData} />} />
+          <Route path="/:title" element={<Modal data={projectData} />} />
+          <Route path="*" element={<Navigate to="/stu1612" replace />} />
         </Routes>
       </BrowserRouter>
     </div>
