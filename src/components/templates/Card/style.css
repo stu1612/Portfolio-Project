@@ -1,6 +1,29 @@
 .card {
-  padding: 2rem;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.28);
+  margin: 10px;
+  width: 250px;
+}
+
+.coming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-text {
+  color: #838383;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.card-content {
+  padding: 10px 2px;
 }

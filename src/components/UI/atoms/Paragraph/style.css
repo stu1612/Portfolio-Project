@@ -4,3 +4,15 @@
   font-weight: 300;
   letter-spacing: 0.2px;
 }
+
+.cl_white {
+  color: var(--cl-white);
+}
+
+.cl_grey {
+  color: #838383;
+}
+
+.cl_black {
+  color: var(--cl-black);
+}

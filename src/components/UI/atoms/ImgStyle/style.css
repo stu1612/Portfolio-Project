@@ -3,7 +3,26 @@
   justify-content: center;
 }
 
+.relative {
+  position: relative;
+}
+
+.img-100 {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.img-150 {
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
 .img-200 {
   width: 200px;
   height: 200px;
+  object-fit: contain;
 }
