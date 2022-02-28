@@ -1,5 +1,6 @@
 .about-section {
-  height: 50vh;
-  width: 100%;
-  background-color: var(--cl-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

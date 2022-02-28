@@ -38,3 +38,10 @@ a {
   font-family: "Poppins", sans-serif;
   color: var(--cl-white);
 }
+
+.page-layout {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}

@@ -1,0 +1,9 @@
+.card-item {
+  padding: 5rem;
+  background-color: var(--cl-yellow);
+  max-width: 48rem;
+  /* margin: 20rem auto; */
+  margin: auto;
+  border-radius: 15px;
+  height: auto;
+}

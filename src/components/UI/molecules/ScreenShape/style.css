@@ -1,0 +1,9 @@
+.shape-mobile {
+  background-color: rgb(92, 65, 70);
+  min-height: 90vh;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

@@ -1,5 +1,6 @@
 .project-section {
-  height: 50vh;
-  width: 100%;
-  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
