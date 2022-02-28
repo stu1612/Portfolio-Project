@@ -2,15 +2,17 @@ export default function ProjectData() {
   return [
     {
       id: 1,
+      isActive: true,
       slug: "Eika-Shopping-App",
       title: "Eika Shopping App",
       body: "This is text from Project One",
       repo: "https://github.com/stu1612/eika",
       url: "https://eika.netlify.app/",
-      pills: ["React", "Context API"],
+      pills: ["React", "Context API", "CSS"],
     },
     {
       id: 2,
+      isActive: false,
       slug: "Restaurant-App",
       title: "Vegan Restaurant App",
       body: "This is text from Project Three",
@@ -20,6 +22,7 @@ export default function ProjectData() {
     },
     {
       id: 3,
+      isActive: false,
       slug: "Package-Tracker",
       title: "Package Tracker",
       body: "This is text from Project Three",
@@ -29,6 +32,7 @@ export default function ProjectData() {
     },
     {
       id: 4,
+      isActive: false,
       slug: "TODO-TDD",
       title: "TODO TDD",
       body: "This is text from Project Four",
@@ -38,6 +42,7 @@ export default function ProjectData() {
     },
     {
       id: 5,
+      isActive: false,
       slug: "E-Commerce",
       title: "E-Commerce",
       body: "This is text from Project Five",
@@ -47,6 +52,7 @@ export default function ProjectData() {
     },
     {
       id: 6,
+      isActive: false,
       slug: "BBQ-Restaurant",
       title: "BBQ Restaurant",
       body: "This is text from Project Six",
@@ -56,6 +62,7 @@ export default function ProjectData() {
     },
     {
       id: 7,
+      isActive: false,
       slug: "LMS",
       title: "LMS",
       body: "This is text from Project Seven",
@@ -65,6 +72,7 @@ export default function ProjectData() {
     },
     {
       id: 8,
+      isActive: false,
       slug: "Netflix",
       title: "Netflix",
       body: "This is text from Project Eight",

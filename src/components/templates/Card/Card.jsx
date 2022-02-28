@@ -7,7 +7,7 @@ export default function Card({ project }) {
   return (
     <div className="card">
       <Title2>{project.title}</Title2>
-      <Link to={`/${project.title}`}>Read more..</Link>
+      {project.isActive && <Link to={`/${project.title}`}>Read more..</Link>}
     </div>
   );
 }
