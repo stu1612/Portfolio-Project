@@ -20,6 +20,9 @@ export default function Modal({ data }) {
             <div key={index}>
               <h3>{project.title}</h3>
               <p>{project.body}</p>
+              {project.pills.map((pill) => {
+                return <li>{pill}</li>;
+              })}
               <button>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   URL
