@@ -23,7 +23,7 @@ export default function Card({ project }) {
 
   return (
     <div className="card" onClick={openActiveCard}>
-      <div className="image-wrapper relative">
+      <div className="relative">
         {comingSoon}
         <img src={project.cardImg} alt={project.alt} className="card-img" />
       </div>

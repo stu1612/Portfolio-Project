@@ -1,12 +1,3 @@
-.image-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.relative {
-  position: relative;
-}
-
 .img-100 {
   width: 100px;
   height: 100px;

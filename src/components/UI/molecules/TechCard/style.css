@@ -1,11 +1,9 @@
-.about-section {
+.container {
+  width: 100px;
+  height: 100px;
+  background: pink;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.image-wrapper {
-  display: flex;
-  justify-content: center;
 }

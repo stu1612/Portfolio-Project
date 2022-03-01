@@ -13,11 +13,13 @@ export default function About() {
   return (
     <div className="about-section page-layout" id="about">
       <ScreenShape>
-        <Image
-          img={img}
-          alt={"illustration of a programmer"}
-          className={"about-img"}
-        />
+        <div className="image-wrapper">
+          <Image
+            img={img}
+            alt={"illustration of a programmer"}
+            className={"about-img"}
+          />
+        </div>
         <Title2>About</Title2>
         <TextContent body="Hello, i am Stu and a enthusiastic frontend developer building kick ass software" />
       </ScreenShape>

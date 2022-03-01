@@ -5,6 +5,10 @@
   width: 250px;
 }
 
+.relative {
+  position: relative;
+}
+
 .coming-soon {
   position: absolute;
   top: 0;
@@ -16,6 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .light-text {

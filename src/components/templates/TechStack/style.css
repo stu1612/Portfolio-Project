@@ -4,3 +4,11 @@
   align-items: center;
   flex-direction: column;
 }
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
