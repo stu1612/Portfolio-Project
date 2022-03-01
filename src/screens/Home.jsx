@@ -7,9 +7,9 @@ import Hero from "../components/templates/Hero/Hero";
 import Portfolio from "../components/templates/Portfolio/Portfolio";
 import Tech from "../components/templates/TechStack/Tech";
 
-import TechIcons from "../data/techIcons";
+import TechIcons from "../data/tech_data";
 
-export default function Home({ data }) {
+export default function Home({ projects }) {
   const [technologies, setTechnologies] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Home({ data }) {
     <div>
       <Hero />
       <About />
-      <Portfolio data={data} />
+      <Portfolio projects={projects} />
       <Tech technologies={technologies} />
       <Contact />
       <Footer />

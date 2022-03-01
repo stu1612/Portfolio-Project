@@ -1,4 +1,4 @@
-export default function NavLinksData() {
+export default function Data() {
   return [
     {
       id: 1,

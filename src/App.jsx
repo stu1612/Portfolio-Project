@@ -3,14 +3,14 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./screens/Home";
 import "./App.css";
 import Modal from "./components/templates/Modal/Modal";
-import Projects from "./data/projects";
+import Data from "./data/project_data";
 import Navigation from "./components/templates/Navigation/Navigation";
 
 export default function App() {
-  const [projectData, setProjectData] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    setProjectData(Projects);
+    setProjects(Data);
   }, []);
 
   return (
@@ -18,8 +18,8 @@ export default function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/stu1612" element={<Home data={projectData} />} />
-          <Route path="/:title" element={<Modal data={projectData} />} />
+          <Route path="/stu1612" element={<Home projects={projects} />} />
+          <Route path="/:title" element={<Modal projects={projects} />} />
           <Route path="*" element={<Navigate to="/stu1612" replace />} />
         </Routes>
       </BrowserRouter>

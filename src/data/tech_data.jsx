@@ -7,57 +7,61 @@ import { FaFigma } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
-export default function TechIcons() {
+export default function Data() {
+  const style = {
+    fontSize: "2.6rem",
+    color: "#b1d3e3",
+  };
   return [
     {
       id: 1,
       title: "React",
-      img: <FaReact size={26} color="#b1d3e3" />,
+      img: <FaReact style={style} />,
     },
     {
       id: 2,
       title: "TypeSript",
-      img: <SiTypescript size={26} color="#b1d3e3" />,
+      img: <SiTypescript style={style} />,
     },
     {
       id: 3,
       title: "Sass",
-      img: <FaSass size={26} color="#b1d3e3" />,
+      img: <FaSass style={style} />,
     },
     {
       id: 4,
       title: "Jest",
-      img: <SiJest size={26} color="#b1d3e3" />,
+      img: <SiJest style={style} />,
     },
     {
       id: 5,
       title: "Firebase Auth",
-      img: <SiFirebase size={26} color="#b1d3e3" />,
+      img: <SiFirebase style={style} />,
     },
     {
       id: 6,
       title: "FireStore",
-      img: <SiFirebase size={26} color="#b1d3e3" />,
+      img: <SiFirebase style={style} />,
     },
     {
       id: 7,
       title: "React Native",
-      img: <FaReact size={26} color="#b1d3e3" />,
+      img: <FaReact style={style} />,
     },
     {
       id: 8,
       title: "Figma",
-      img: <FaFigma size={26} color="#b1d3e3" />,
+      img: <FaFigma style={style} />,
     },
     {
       id: 9,
       title: "Python",
-      img: <FaPython size={26} color="#b1d3e3" />,
+      img: <FaPython style={style} />,
     },
     {
       id: 10,
       title: "JavaScript",
-      img: <SiJavascript size={26} color="#b1d3e3" />,
+      img: <SiJavascript style={style} />,
     },
   ];
 }

@@ -11,7 +11,7 @@ import todo_ci from "../assets/images/cards/todo_ci.jpg";
 //screenshot images
 import eika_sh from "../assets/screenshots/eika_sh.png";
 
-export default function Projects() {
+export default function Data() {
   return [
     {
       id: 1,

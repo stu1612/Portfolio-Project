@@ -4,12 +4,10 @@ import TextContent from "../../UI/molecules/TextContent/TextContent";
 import Card from "../Card/Card";
 import "./style.css";
 
-export default function Portfolio({ data }) {
+export default function Portfolio({ projects }) {
   const projectCards =
-    data &&
-    data.map((project) => (
-      <Card key={project.id} project={project} data={data} />
-    ));
+    projects &&
+    projects.map((project) => <Card key={project.id} project={project} />);
 
   return (
     <div className="project-section page-layout" id="projects">

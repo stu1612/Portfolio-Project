@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 // data
-import NavLinksData from "../../../data/navLinksData";
+import Data from "../../../data/navlink_data";
 // scripts
 import scrollToLocation from "../../../scripts/scrollToLocation";
 // style
@@ -10,7 +10,7 @@ export default function Navigation() {
   const [links, setLinks] = useState([]);
 
   useEffect(() => {
-    setLinks(NavLinksData);
+    setLinks(Data);
   }, []);
 
   return (
