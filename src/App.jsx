@@ -1,10 +1,15 @@
+//npm
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Home from "./screens/Home";
+// styles
 import "./App.css";
+// screens
+import Home from "./screens/Home";
+// components
 import Modal from "./components/templates/Modal/Modal";
-import Data from "./data/project_data";
 import Navigation from "./components/templates/Navigation/Navigation";
+// data
+import Data from "./data/project_data";
 
 export default function App() {
   const [projects, setProjects] = useState([]);

@@ -14,7 +14,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <div className="nav">
+    <nav className="nav">
       <ul className="nav-links">
         {links.map((link) => (
           <li key={link.id}>
@@ -24,6 +24,6 @@ export default function Navigation() {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }

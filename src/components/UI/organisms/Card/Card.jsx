@@ -1,21 +1,24 @@
 // npm
 import { useNavigate } from "react-router-dom";
+// atoms
+import { Title3 } from "../../atoms/Title";
 // styles
-import { Title3 } from "../../UI/atoms/Title";
 import "./style.css";
 
 export default function Card({ project }) {
   const navigate = useNavigate();
 
+  const { isActive, title, name, alt, image } = project;
+
   function openActiveCard() {
-    if (project.isActive) {
-      navigate(`/${project.title}`);
+    if (isActive) {
+      navigate(`/${title}`);
     } else {
       return;
     }
   }
 
-  const comingSoon = !project.isActive && (
+  const comingSoon = !isActive && (
     <div className="coming-soon">
       <p className="light-text">Coming Soon</p>
     </div>
@@ -25,10 +28,10 @@ export default function Card({ project }) {
     <div className="card" onClick={openActiveCard}>
       <div className="relative">
         {comingSoon}
-        <img src={project.cardImg} alt={project.alt} className="card-img" />
+        <img src={image} alt={alt} className="card-img" />
       </div>
       <div className="card-content">
-        <Title3>{project.projName}</Title3>
+        <Title3>{name}</Title3>
       </div>
     </div>
   );

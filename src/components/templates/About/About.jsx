@@ -11,7 +11,7 @@ import img from "../../../assets/images/programmer.svg";
 
 export default function About() {
   return (
-    <div className="about-section page-layout" id="about">
+    <section className="about-section page-layout" id="about">
       <ScreenShape>
         <div className="image-wrapper">
           <Image
@@ -23,6 +23,6 @@ export default function About() {
         <Title2>About</Title2>
         <TextContent body="Hello, i am Stu and a enthusiastic frontend developer building kick ass software" />
       </ScreenShape>
-    </div>
+    </section>
   );
 }
