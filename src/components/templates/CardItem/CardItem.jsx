@@ -1,4 +1,5 @@
 import Pill from "../../UI/atoms/Pill/index";
+import { Title3 } from "../../UI/atoms/Title";
 import ButtonContainer from "../../UI/molecules/ButtonContainer/ButtonContainer";
 import TextContent from "../../UI/molecules/TextContent/TextContent";
 // styles
@@ -8,9 +9,11 @@ export default function CardItem({ proj }) {
   return (
     <div key={proj.id} className="card-item">
       <div className="image-wrapper relative">
-        <img src={proj.screenshotImg} alt="hello" className="img-250" />
+        <img src={proj.screenshotImg} alt="hello" className="cardItem-img" />
       </div>
-      <TextContent title={proj.projName} body={proj.body} />
+      <Title3>{proj.projName}</Title3>
+
+      <TextContent body={proj.body} />
       <div className="pills-container">
         {proj.pills.map((pill) => (
           <Pill text={pill} />

@@ -1,3 +1,4 @@
+import { Title2 } from "../../UI/atoms/Title";
 import ScreenShape from "../../UI/molecules/ScreenShape/ScreenShape";
 import TextContent from "../../UI/molecules/TextContent/TextContent";
 import Card from "../Card/Card";
@@ -13,10 +14,8 @@ export default function Portfolio({ data }) {
   return (
     <div className="project-section page-layout" id="projects">
       <ScreenShape>
-        <TextContent
-          title="Projects"
-          body="Here are the projects I will be making during the Intensive Frontend Course with Novare Potential"
-        />
+        <Title2>Projects</Title2>
+        <TextContent body="Here are the projects I will be making during the Intensive Frontend Course with Novare Potential" />
         <div className="cards-container">{projectCards}</div>
       </ScreenShape>
     </div>

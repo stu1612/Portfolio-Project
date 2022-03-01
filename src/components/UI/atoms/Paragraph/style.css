@@ -1,5 +1,6 @@
 .paragraph {
-  font-size: clamp(1.6rem, 10vw, 2.1rem);
+  /* font-size: clamp(1.6rem, 10vw, 2.1rem); */
+  font-size: 1.4rem;
   line-height: clamp(2.6rem, 10vw, 3.4rem);
   font-weight: 300;
   letter-spacing: 0.2px;

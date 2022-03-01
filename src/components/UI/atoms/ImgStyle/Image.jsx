@@ -1,9 +1,9 @@
 import "./style.css";
 
-export default function Image({ img, alt }) {
+export default function Image({ img, alt, className }) {
   return (
     <div className="image-wrapper">
-      <img src={img} alt={alt} className="img-200" />
+      <img src={img} alt={alt} className={className} />
     </div>
   );
 }

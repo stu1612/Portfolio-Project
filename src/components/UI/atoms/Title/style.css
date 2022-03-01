@@ -4,7 +4,7 @@
   font-weight: 300;
   line-height: clamp(3.5rem, 10vw, 9.6rem);
   letter-spacing: 4px;
-  padding: 15px 0;
+  padding: 15px 5px;
 }
 
 .title_2 {
@@ -12,7 +12,7 @@
   font-weight: 400;
   line-height: clamp(2.9rem, 10vw, 4.8rem);
   letter-spacing: 1px;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 .title_3 {
@@ -20,7 +20,7 @@
   font-weight: 600;
   /* line-height: clamp(2.6rem, 10vw, 3.8rem); */
   letter-spacing: 0.4px;
-  padding: 5px 0;
+  padding: 5px;
   font-size: 1.6rem;
   line-height: 2.6rem;
 }

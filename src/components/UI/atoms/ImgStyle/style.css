@@ -13,7 +13,7 @@
   object-fit: contain;
 }
 
-.img-150 {
+.card-img {
   height: 150px;
   width: 100%;
   border-top-left-radius: 15px;
@@ -21,16 +21,29 @@
   object-fit: cover;
 }
 
-.img-250 {
-  height: 45vh;
+.cardItem-img {
+  height: 35vh;
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
 }
 
-.img-200 {
-  width: 200px;
+.about-img {
+  width: 250px;
   height: 200px;
   object-fit: contain;
+  padding: 10px;
+}
+
+@media only screen and (min-height: 600px) {
+  .cardItem-img {
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .cardItem-img {
+    height: 55vh;
+  }
 }

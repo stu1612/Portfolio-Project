@@ -25,7 +25,7 @@ export default function Card({ project }) {
     <div className="card" onClick={openActiveCard}>
       <div className="image-wrapper relative">
         {comingSoon}
-        <img src={project.cardImg} alt="hello" className="img-150" />
+        <img src={project.cardImg} alt={project.alt} className="card-img" />
       </div>
       <div className="card-content">
         <Title3>{project.projName}</Title3>
