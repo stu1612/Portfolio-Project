@@ -5,6 +5,7 @@
   line-height: clamp(3.5rem, 10vw, 9.6rem);
   letter-spacing: 4px;
   padding: 15px 5px;
+  text-align: center;
 }
 
 .title_2 {
