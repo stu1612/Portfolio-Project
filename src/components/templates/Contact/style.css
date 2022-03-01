@@ -4,3 +4,16 @@
   align-items: center;
   flex-direction: column;
 }
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.icon-wrapper {
+  background-color: var(--cl-yellow);
+  padding: 5px;
+  border-radius: 25px;
+}

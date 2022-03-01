@@ -1,5 +1,18 @@
 .footer-section {
-  height: 50vh;
+  min-height: 20vh;
   width: 100%;
-  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
 }
