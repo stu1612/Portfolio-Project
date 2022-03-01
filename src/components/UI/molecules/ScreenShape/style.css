@@ -1,9 +1,25 @@
 .shape-mobile {
-  background-color: rgb(92, 65, 70);
+  /* background-color: rgb(92, 65, 70);
   min-height: 90vh;
   height: 100%;
   width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  width: min(95%, 90rem);
+  min-height: 100vh;
+  row-gap: 1.5rem;
+  /* justify-items: center; */
+  align-content: center;
+  text-align: left;
+  /* background-color: blueviolet; */
 }
+
+/* display: grid;
+  width: min(95%, 50rem);
+  min-height: 100vh;
+  row-gap: 1.5rem;
+  justify-items: center;
+  align-content: center;
+  text-align: center; */

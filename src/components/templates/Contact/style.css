@@ -12,8 +12,24 @@
   margin: 5px 0;
 }
 
+.flex-around {
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .icon-wrapper {
   background-color: var(--cl-yellow);
   padding: 5px;
   border-radius: 25px;
+}
+
+@media screen and (min-width: 760px) {
+  .flex-around {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

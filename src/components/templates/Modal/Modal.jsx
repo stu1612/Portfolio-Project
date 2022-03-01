@@ -1,7 +1,6 @@
 // npm
 import ReactDOM from "react-dom";
 import { useParams, useNavigate } from "react-router-dom";
-import { AiFillCloseCircle } from "react-icons/ai";
 // components
 import CardItem from "../../UI/organisms/CardItem/CardItem";
 // styles
@@ -15,7 +14,9 @@ export default function Modal({ projects }) {
     projects &&
     projects
       .filter((project) => project.title === title)
-      .map((project) => <CardItem project={project} key={project.id} />);
+      .map((project) => (
+        <CardItem project={project} key={project.id} closeModal={closeModal} />
+      ));
 
   function closeModal() {
     navigate("/");
@@ -24,12 +25,6 @@ export default function Modal({ projects }) {
   return ReactDOM.createPortal(
     <div className="modal-background">
       {cardItem}
-      <AiFillCloseCircle
-        onClick={closeModal}
-        className="modal-icon"
-        color="white"
-        size={32}
-      />
       ))
     </div>,
     document.body

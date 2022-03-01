@@ -14,9 +14,13 @@ export default function Tech({ technologies }) {
   return (
     <section className="tech-section page-layout" id="tech">
       <ScreenShape>
-        <Title2>Technologies</Title2>
-        <TextContent body="Here are the technologies I already know and what I will be learning" />
-        <div className="icons-container">{Icons}</div>
+        <div className="flex-start">
+          <Title2>Technologies</Title2>
+        </div>
+        <div className="flex-container">
+          <TextContent body="Here are the technologies I already know and what I will be learning" />
+          <div className="icons-container">{Icons}</div>
+        </div>
       </ScreenShape>
     </section>
   );

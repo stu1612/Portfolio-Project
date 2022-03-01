@@ -1,8 +1,9 @@
 .card {
   border-radius: 15px;
-  box-shadow: 1px 3px 14px rgba(67, 217, 152, 0.4);
+  box-shadow: 2px 4px 1px rgb(111 181 238 / 50%);
   margin: 10px;
   width: 250px;
+  cursor: pointer;
 }
 
 .relative {
@@ -32,4 +33,15 @@
 
 .card-content {
   padding: 10px 2px;
+}
+
+@media screen and (min-width: 760px) {
+  .card {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .card {
+    width: 190px;
+  }
 }

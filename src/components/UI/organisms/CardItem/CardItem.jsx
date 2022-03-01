@@ -6,38 +6,51 @@ import ButtonContainer from "../../molecules/ButtonContainer/ButtonContainer";
 import TextContent from "../../molecules/TextContent/TextContent";
 // styles
 import "./style.css";
+import { AiFillCloseCircle } from "react-icons/ai";
 
-export default function CardItem({ project }) {
+export default function CardItem({ project, closeModal }) {
   const { screenshot, name, body, pills, repo, url } = project;
 
   const pillsArray = pills.map((pill) => <Pill text={pill} />);
 
   return (
     <div className="card-item">
+      <AiFillCloseCircle
+        onClick={closeModal}
+        className="modal-icon"
+        color="white"
+        size={32}
+      />
       <div className="image-wrapper relative">
         <img src={screenshot} alt="hello" className="cardItem-img" />
       </div>
-      <Title3>{name}</Title3>
-      <TextContent body={body} />
-      <div className="pills-container">{pillsArray}</div>
-      <ButtonContainer>
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary"
-        >
-          Visit website/app
-        </a>
-        <a
-          href={repo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-secondary"
-        >
-          Git repository
-        </a>
-      </ButtonContainer>
+      <div className="cardItem-content">
+        <div className="top">
+          <Title3>{name}</Title3>
+          <TextContent body={body} />
+          <div className="pills-container">{pillsArray}</div>
+        </div>
+        <div className="bottom">
+          <ButtonContainer>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Visit website/app
+            </a>
+            <a
+              href={repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
+              Git repository
+            </a>
+          </ButtonContainer>
+        </div>
+      </div>
     </div>
   );
 }

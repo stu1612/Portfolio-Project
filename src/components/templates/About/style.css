@@ -5,7 +5,43 @@
   flex-direction: column;
 }
 
+.about-container {
+  display: grid;
+  width: min(95%, 90rem);
+  min-height: 100vh;
+  row-gap: 1.5rem;
+  /* justify-items: center; */
+  align-content: center;
+  text-align: left;
+}
+
 .image-wrapper {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 760px) {
+  .about-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title . . ."
+      "text text image image";
+  }
+
+  .item-a {
+    grid-area: image;
+  }
+
+  .item-b {
+    grid-area: title;
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  .item-c {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+  }
 }

@@ -9,7 +9,7 @@ import { SiJavascript } from "react-icons/si";
 
 export default function Data() {
   const style = {
-    fontSize: "2.6rem",
+    fontSize: "8rem",
     color: "#b1d3e3",
   };
   return [

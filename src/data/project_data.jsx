@@ -24,7 +24,7 @@ export default function Data() {
       body: "This is text from Project One",
       repo: "https://github.com/stu1612/eika",
       url: "https://eika.netlify.app/",
-      pills: ["React", "Context API", "CSS"],
+      pills: ["React", "Context API", "CSS", "Sass", "jest", "React Native"],
     },
     {
       id: 2,

@@ -37,4 +37,8 @@
   .cardItem-img {
     height: 55vh;
   }
+
+  .about-img {
+    padding: 0;
+  }
 }

@@ -1,9 +1,9 @@
 .container {
-  width: 100px;
-  height: 100px;
-  background: pink;
+  width: 130px;
+  /* height: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 10px;
 }

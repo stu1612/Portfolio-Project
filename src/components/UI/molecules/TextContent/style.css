@@ -1,3 +1,9 @@
 .text-content {
   padding: 0 5px;
 }
+
+@media screen and (min-width: 760px) {
+  .thin {
+    width: 50%;
+  }
+}

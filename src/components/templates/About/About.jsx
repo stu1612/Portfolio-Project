@@ -12,17 +12,21 @@ import img from "../../../assets/images/programmer.svg";
 export default function About() {
   return (
     <section className="about-section page-layout" id="about">
-      <ScreenShape>
-        <div className="image-wrapper">
+      <div className="about-container">
+        <div className="image-wrapper item-a">
           <Image
             img={img}
             alt={"illustration of a programmer"}
             className={"about-img"}
           />
         </div>
-        <Title2>About</Title2>
-        <TextContent body="Hello, i am Stu and a enthusiastic frontend developer building kick ass software" />
-      </ScreenShape>
+        <div className="item-b">
+          <Title2>About</Title2>
+        </div>
+        <div className="item-c">
+          <TextContent body="Hello, i am Stu and a enthusiastic frontend developer building kick ass software" />
+        </div>
+      </div>
     </section>
   );
 }

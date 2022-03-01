@@ -9,6 +9,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
+}
+
+@media screen and (min-width: 760px) {
+  .icons-container {
+    justify-content: flex-start;
+  }
 }

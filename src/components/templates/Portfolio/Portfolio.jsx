@@ -16,9 +16,13 @@ export default function Portfolio({ projects }) {
   return (
     <section className="project-section page-layout" id="projects">
       <ScreenShape>
-        <Title2>Projects</Title2>
-        <TextContent body="Here are the projects I will be making during the Intensive Frontend Course with Novare Potential" />
-        <div className="cards-container">{projectCards}</div>
+        <div className="flex-start">
+          <Title2>Projects</Title2>
+        </div>
+        <div className="flex-container">
+          <TextContent body="Here are the projects I will be making during the Intensive Frontend Course with Novare Potential" />
+          <div className="cards-container">{projectCards}</div>
+        </div>
       </ScreenShape>
     </section>
   );
