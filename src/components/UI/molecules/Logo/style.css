@@ -1,5 +1,12 @@
 .logo {
-  /* background-color: var(--cl-yellow); */
   border-radius: 50px;
   padding: 5px;
+  cursor: pointer;
+  pointer-events: initial;
+}
+
+@media screen and (min-width: 760px) {
+  .logo {
+    background-color: var(--cl-yellow);
+  }
 }

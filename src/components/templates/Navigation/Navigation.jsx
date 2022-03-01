@@ -17,25 +17,25 @@ export default function Navigation() {
   return (
     <header>
       <nav className="nav">
-        <div className="1">
+        <div className="one">
           <a href="#about" className="nav-links" onClick={scrollToLocation}>
             About
           </a>
         </div>
-        <div className="2">
+        <div className="two">
           <a href="#projects" className="nav-links" onClick={scrollToLocation}>
             Projects
           </a>
         </div>
-        <div className="3">
+        <div className="three">
           <Logo />
         </div>
-        <div className="4">
+        <div className="four">
           <a href="#tech" className="nav-links" onClick={scrollToLocation}>
             Tech
           </a>
         </div>
-        <div className="5">
+        <div className="five">
           <a href="#contact" className="nav-links" onClick={scrollToLocation}>
             Contact
           </a>
