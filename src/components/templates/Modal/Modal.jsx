@@ -2,6 +2,7 @@
 import ReactDOM from "react-dom";
 import { useParams, useNavigate } from "react-router-dom";
 import CardItem from "../CardItem/CardItem";
+import { AiFillCloseCircle } from "react-icons/ai";
 // styles
 import "./style.css";
 
@@ -21,10 +22,13 @@ export default function Modal({ data }) {
 
   return ReactDOM.createPortal(
     <div className="modal-background">
-      <div className="modal">
-        {cardItem}
-        <button onClick={closeModal}>Close</button>
-      </div>
+      {cardItem}
+      <AiFillCloseCircle
+        onClick={closeModal}
+        className="modal-icon"
+        color="white"
+        size={32}
+      />
       ))
     </div>,
     document.body

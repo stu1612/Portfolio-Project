@@ -21,6 +21,14 @@
   object-fit: cover;
 }
 
+.img-250 {
+  height: 45vh;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
 .img-200 {
   width: 200px;
   height: 200px;

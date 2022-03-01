@@ -1,6 +1,5 @@
 // npm
 import { useNavigate } from "react-router-dom";
-import { Paragraph } from "../../UI/atoms/Paragraph";
 // styles
 import { Title3 } from "../../UI/atoms/Title";
 import "./style.css";
