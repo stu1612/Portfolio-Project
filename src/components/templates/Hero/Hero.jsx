@@ -1,7 +1,10 @@
-import "./style.css";
+// atoms
+import { Title1 } from "../../UI/atoms/Title/index";
+// images
 import hero from "../../../assets/images/landing-img.jpg";
 import programmer from "../../../assets/images/landing.svg";
-import { Title1 } from "../../UI/atoms/Title/index";
+// styles
+import "./style.css";
 
 export default function Hero() {
   return (

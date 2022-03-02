@@ -17,19 +17,9 @@
 }
 
 .title_3 {
-  /* font-size: clamp(1.6rem, 10vw, 2.4rem); */
   font-weight: 600;
-  /* line-height: clamp(2.6rem, 10vw, 3.8rem); */
   letter-spacing: 0.4px;
   padding: 5px;
   font-size: 1.6rem;
   line-height: 2.6rem;
 }
-
-/* .cl_white {
-  color: var(--cl-white);
-}
-
-.cl_black {
-  color: var(--cl-black);
-} */

@@ -23,10 +23,7 @@ export default function Modal({ projects }) {
   }
 
   return ReactDOM.createPortal(
-    <div className="modal-background">
-      {cardItem}
-      ))
-    </div>,
+    <div className="modal-background">{cardItem}))</div>,
     document.body
   );
 }

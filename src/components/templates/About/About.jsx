@@ -2,7 +2,6 @@
 import Image from "../../UI/atoms/ImgStyle/Image";
 import { Title2 } from "../../UI/atoms/Title";
 // molecules
-import ScreenShape from "../../UI/molecules/ScreenShape/ScreenShape";
 import TextContent from "../../UI/molecules/TextContent/TextContent";
 // style
 import "./style.css";
