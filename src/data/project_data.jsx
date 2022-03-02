@@ -21,7 +21,7 @@ export default function Data() {
       screenshot: eika_sh,
       alt: "sofa, table, chiars design",
       name: "Eika Shopping App",
-      body: "This is text from Project One",
+      body: "This was the start of my journey with Novare - showcasing my knowledge of React functions",
       repo: "https://github.com/stu1612/eika",
       url: "https://eika.netlify.app/",
       pills: ["React", "Context API", "CSS"],

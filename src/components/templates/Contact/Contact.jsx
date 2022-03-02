@@ -24,7 +24,7 @@ export default function Contact({ contacts }) {
             body="Here is my contact information if you are intersted in starting a collaboration !"
             customStyle={"thin"}
           />
-          {contactLinks}
+          <div>{contactLinks}</div>
         </div>
       </ScreenShape>
     </section>
