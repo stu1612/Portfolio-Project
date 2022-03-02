@@ -1,29 +1,17 @@
-//npm
-import { useState, useEffect } from "react";
 // atoms
 import { Title3 } from "../../atoms/Title";
 // style
 import "./style.css";
-// data
-import Data from "../../../../data/contact_data";
 
-export default function ContactIcons() {
-  const [data, setData] = useState([]);
+export default function ContactIcons({ contact }) {
+  const { icon, link, title } = contact;
 
-  useEffect(() => {
-    setData(Data);
-  }, []);
-
-  const contactLinks =
-    data &&
-    data.map((contact) => (
-      <div className="contact-wrapper">
-        <div className="icon-wrapper">{contact.icon}</div>
-        <a href={contact.link}>
-          <Title3>{contact.title}</Title3>
-        </a>
-      </div>
-    ));
-
-  return <div>{contactLinks}</div>;
+  return (
+    <div className="contact-wrapper">
+      <div className="icon-wrapper">{icon}</div>
+      <a href={link}>
+        <Title3>{title}</Title3>
+      </a>
+    </div>
+  );
 }

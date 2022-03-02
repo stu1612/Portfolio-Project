@@ -7,7 +7,12 @@ import ContactIcons from "../../UI/organisms/ContactIcons/ContactIcons";
 // styles
 import "./style.css";
 
-export default function Contact() {
+export default function Contact({ contacts }) {
+  const contactLinks =
+    contacts &&
+    contacts.map((contact) => (
+      <ContactIcons contact={contact} key={contact.id} />
+    ));
   return (
     <section className="contact-section page-layout" id="contact">
       <ScreenShape>
@@ -19,7 +24,7 @@ export default function Contact() {
             body="Here is my contact information if you are intersted in starting a collaboration !"
             customStyle={"thin"}
           />
-          <ContactIcons />
+          {contactLinks}
         </div>
       </ScreenShape>
     </section>

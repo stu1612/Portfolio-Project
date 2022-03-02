@@ -25,12 +25,30 @@
   height: 48px;
 }
 
+.cardItem-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 55vh;
+}
+
 .btn-primary {
   background-color: var(--cl-green);
 }
 
 .btn-secondary {
   background-color: var(--cl-yellow);
+}
+
+@media screen and (min-height: 600px) {
+  .cardItem-content {
+    height: 50vh;
+  }
+}
+@media screen and (min-height: 700px) {
+  .cardItem-content {
+    height: 45vh;
+  }
 }
 
 @media screen and (min-width: 760px) {
@@ -50,9 +68,6 @@
   }
 
   .cardItem-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 38%;
     padding: 5px;
   }

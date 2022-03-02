@@ -9,7 +9,8 @@ import "./style.css";
 
 export default function Tech({ technologies }) {
   const Icons =
-    technologies && technologies.map((tech) => <TechCard tech={tech} />);
+    technologies &&
+    technologies.map((tech) => <TechCard tech={tech} key={tech.id} />);
 
   return (
     <section className="tech-section page-layout" id="tech">

@@ -11,7 +11,8 @@ import "./style.css";
 export default function CardItem({ project, closeModal }) {
   const { screenshot, name, body, pills, repo, url } = project;
 
-  const pillsArray = pills && pills.map((pill) => <Pill text={pill} />);
+  const pillsArray =
+    pills && pills.map((pill, index) => <Pill key={index} text={pill} />);
 
   return (
     <div className="card-item">

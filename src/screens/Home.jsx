@@ -8,13 +8,19 @@ import Hero from "../components/templates/Hero/Hero";
 import Portfolio from "../components/templates/Portfolio/Portfolio";
 import Tech from "../components/templates/TechStack/Tech";
 // data
-import TechIcons from "../data/tech_data";
+import t_Data from "../data/tech_data";
+import c_Data from "../data/contact_data";
 
 export default function Home({ projects }) {
   const [technologies, setTechnologies] = useState([]);
+  const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    setTechnologies(TechIcons);
+    setTechnologies(t_Data);
+  }, []);
+
+  useEffect(() => {
+    setContacts(c_Data);
   }, []);
 
   return (
@@ -23,7 +29,7 @@ export default function Home({ projects }) {
       <About />
       <Portfolio projects={projects} />
       <Tech technologies={technologies} />
-      <Contact />
+      <Contact contacts={contacts} />
       <Footer />
     </div>
   );
