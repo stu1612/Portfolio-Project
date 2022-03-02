@@ -26,7 +26,10 @@ This is my first assignment for Novare Potential. My assignment was to create a 
 
 ## Credits
 
-- [PluralSight](https://www.pluralsight.com/product/skills/individuals?aid=701j0000002BGhvAAG&cq_cmp=230408478&gclid=CjwKCAiA0KmPBhBqEiwAJqKK42XeKgQVJiS0d_YbjYBtjiciucBmec7P0_wFlEcuJIdSbSOcL1ywkRoCdIYQAvD_BwE&promo=&pslp=product-skills-personal&utm_campaign=EMEA_SWE_Brand_E&utm_content=&utm_medium=digital_paid_search_google&utm_source=branded&utm_term=)
+## Unsplash Images
+
+- [Claudio Schwarz](https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 - [Stackoverflow](https://stackoverflow.com/)
 
 # Portfolio-Project
