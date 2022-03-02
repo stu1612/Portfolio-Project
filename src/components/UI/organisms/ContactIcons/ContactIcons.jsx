@@ -1,31 +1,29 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { ImMobile } from "react-icons/im";
-import { ImLocation } from "react-icons/im";
-
+//npm
+import { useState, useEffect } from "react";
+// atoms
 import { Title3 } from "../../atoms/Title";
+// style
 import "./style.css";
+// data
+import Data from "../../../../data/contact_data";
 
 export default function ContactIcons() {
-  return (
-    <div>
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData(Data);
+  }, []);
+
+  const contactLinks =
+    data &&
+    data.map((contact) => (
       <div className="contact-wrapper">
-        <div className="icon-wrapper">
-          <AiOutlineMail size={20} />
-        </div>
-        <Title3>stu.bolderson@aol.com</Title3>
+        <div className="icon-wrapper">{contact.icon}</div>
+        <a href={contact.link}>
+          <Title3>{contact.title}</Title3>
+        </a>
       </div>
-      <div className="contact-wrapper">
-        <div className="icon-wrapper">
-          <ImMobile size={20} />
-        </div>
-        <Title3>+46 70 857 7935</Title3>
-      </div>
-      <div className="contact-wrapper">
-        <div className="icon-wrapper">
-          <ImLocation size={20} />
-        </div>
-        <Title3>Lund, Sweden</Title3>
-      </div>
-    </div>
-  );
+    ));
+
+  return <div>{contactLinks}</div>;
 }

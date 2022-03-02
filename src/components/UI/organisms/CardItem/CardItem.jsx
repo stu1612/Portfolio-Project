@@ -1,26 +1,21 @@
 // atoms
 import Pill from "../../atoms/Pill/index";
 import { Title3 } from "../../atoms/Title";
+import CloseIcon from "../../atoms/CloseIcon/CloseIcon";
 // molecules
 import ButtonContainer from "../../molecules/ButtonContainer/ButtonContainer";
 import TextContent from "../../molecules/TextContent/TextContent";
 // styles
 import "./style.css";
-import { AiFillCloseCircle } from "react-icons/ai";
 
 export default function CardItem({ project, closeModal }) {
   const { screenshot, name, body, pills, repo, url } = project;
 
-  const pillsArray = pills.map((pill) => <Pill text={pill} />);
+  const pillsArray = pills && pills.map((pill) => <Pill text={pill} />);
 
   return (
     <div className="card-item">
-      <AiFillCloseCircle
-        onClick={closeModal}
-        className="modal-icon"
-        color="white"
-        size={32}
-      />
+      <CloseIcon clickHandler={closeModal} />
       <div className="image-wrapper relative">
         <img src={screenshot} alt="hello" className="cardItem-img" />
       </div>

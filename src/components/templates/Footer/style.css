@@ -12,6 +12,10 @@
   padding: 10px;
 }
 
+.wrapper a {
+  cursor: pointer;
+}
+
 .footer-links {
   display: flex;
   flex-direction: row;

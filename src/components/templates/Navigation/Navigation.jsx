@@ -5,7 +5,6 @@ import Data from "../../../data/navlink_data";
 import scrollToLocation from "../../../scripts/scrollToLocation";
 // style
 import "./style.css";
-import Logo from "../../UI/molecules/Logo/Logo";
 
 export default function Navigation() {
   const [links, setLinks] = useState([]);
@@ -14,33 +13,17 @@ export default function Navigation() {
     setLinks(Data);
   }, []);
 
+  const navLinks = links.map((link) => (
+    <div className={link.class} key={link.id}>
+      <a href={link.url} className="nav-links" onClick={scrollToLocation}>
+        {link.name}
+      </a>
+    </div>
+  ));
+
   return (
     <header>
-      <nav className="nav">
-        <div className="one">
-          <a href="#about" className="nav-links" onClick={scrollToLocation}>
-            About
-          </a>
-        </div>
-        <div className="two">
-          <a href="#projects" className="nav-links" onClick={scrollToLocation}>
-            Projects
-          </a>
-        </div>
-        <div className="three">
-          <Logo />
-        </div>
-        <div className="four">
-          <a href="#tech" className="nav-links" onClick={scrollToLocation}>
-            Tech
-          </a>
-        </div>
-        <div className="five">
-          <a href="#contact" className="nav-links" onClick={scrollToLocation}>
-            Contact
-          </a>
-        </div>
-      </nav>
+      <nav className="nav">{navLinks}</nav>
     </header>
   );
 }

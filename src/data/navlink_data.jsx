@@ -1,29 +1,36 @@
+import Logo from "../components/UI/molecules/Logo/Logo";
+
 export default function Data() {
   return [
-    // {
-    //   id: 1,
-    //   text: "home",
-    //   url: "#home",
-    // },
+    {
+      id: 1,
+      class: "one",
+      url: "#about",
+      name: "About",
+    },
     {
       id: 2,
-      text: "about",
-      url: "#about",
+      class: "two",
+      url: "#projects",
+      name: "Projects",
     },
     {
       id: 3,
-      text: "projects",
-      url: "#projects",
+      class: "three",
+      url: "#home",
+      name: <Logo />,
     },
     {
       id: 4,
-      text: "tech",
+      class: "four",
       url: "#tech",
+      name: "tech",
     },
     {
       id: 5,
-      text: "contact",
+      class: "five",
       url: "#contact",
+      name: "contact",
     },
   ];
 }
