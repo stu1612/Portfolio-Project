@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { GiFist } from "react-icons/gi";
+import logo from "../../../../assets/icons/logo.png";
 import "./style.css";
 
 export default function Logo() {
@@ -10,7 +10,12 @@ export default function Logo() {
   }
   return (
     <div className="logo">
-      <GiFist size={32} color="#b1d3e3" onClick={navigateToHome} />
+      <img
+        src={logo}
+        alt="programing sign within circle"
+        onClick={navigateToHome}
+        className="logo"
+      />
     </div>
   );
 }
