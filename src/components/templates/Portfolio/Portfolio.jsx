@@ -9,6 +9,7 @@ import Card from "../../UI/organisms/Card/Card";
 import "./style.css";
 
 export default function Portfolio({ projects }) {
+  // -1
   const projectCards =
     projects &&
     projects.map((project) => <Card key={project.id} project={project} />);

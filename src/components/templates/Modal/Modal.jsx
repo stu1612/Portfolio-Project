@@ -10,6 +10,7 @@ export default function Modal({ projects }) {
   const { title } = useParams();
   const navigate = useNavigate();
 
+  // Same as before, no need to projects &&, this leads to nesting -1
   const cardItem =
     projects &&
     projects

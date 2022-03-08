@@ -8,6 +8,7 @@ import "./style.css";
 // images
 import img from "../../../assets/images/programmer.svg";
 
+// good
 export default function About() {
   return (
     <section className="about-section page-layout" id="about">

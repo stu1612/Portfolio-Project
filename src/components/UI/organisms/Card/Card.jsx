@@ -5,11 +5,16 @@ import { Title3 } from "../../atoms/Title";
 // styles
 import "./style.css";
 
+// good
 export default function Card({ project }) {
   const navigate = useNavigate();
 
   const { isActive, title, name, alt, image } = project;
 
+  /**
+   * Note:
+   * This could be done soo much easily using the portal.
+   */
   function openActiveCard() {
     if (isActive) {
       navigate(`/${title}`);

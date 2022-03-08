@@ -8,6 +8,7 @@ import TextContent from "../../UI/molecules/TextContent/TextContent";
 import "./style.css";
 
 export default function Tech({ technologies }) {
+  // -1
   const Icons =
     technologies &&
     technologies.map((tech) => <TechCard tech={tech} key={tech.id} />);

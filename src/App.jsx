@@ -12,6 +12,8 @@ import Navigation from "./components/templates/Navigation/Navigation";
 import Data from "./data/project_data";
 
 export default function App() {
+  // No need to use a hook if the data will not mutete -1
+  // Confirmed by doing a quick search, nobody calls setProjects()
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -22,6 +24,7 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Navigation />
+        {/* You arent using a true modal for the project -1 */}
         <Routes>
           <Route path="/stu1612" element={<Home projects={projects} />} />
           <Route path="/:title" element={<Modal projects={projects} />} />

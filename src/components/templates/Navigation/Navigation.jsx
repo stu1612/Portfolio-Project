@@ -7,6 +7,7 @@ import scrollToLocation from "../../../scripts/scrollToLocation";
 import "./style.css";
 
 export default function Navigation() {
+  // Same here, no need to use a hook if the data is read only -1
   const [links, setLinks] = useState([]);
 
   useEffect(() => {
