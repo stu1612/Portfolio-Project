@@ -12,8 +12,10 @@ export default function Card({ project }) {
   const { isActive, title, name, alt, image } = project;
 
   /**
+   *
    * Note:
    * This could be done soo much easily using the portal.
+   *
    */
   function openActiveCard() {
     if (isActive) {
