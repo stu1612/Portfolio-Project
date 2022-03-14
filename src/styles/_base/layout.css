@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Secular+One&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-color: red;
+  --bg-color: lightblue;
+}
+
+[data-theme="dark"] {
+  --font-color: lightblue;
+  --bg-color: red;
+}
+
+[data-theme="green"] {
+  --font-color: purple;
+  --bg-color: green;
+}
+
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+a,
+li,
+span,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Secular One", sans-serif;
+}
+
+.theme-options {
+  width: 100%;
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#theme-blue {
+  background-color: blue;
+}
+
+#theme-white {
+  background-color: white;
+}
+
+#theme-green {
+  background-color: green;
+}
+
+#theme-black {
+  background-color: black;
+}

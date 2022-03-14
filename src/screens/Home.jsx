@@ -1,36 +1,38 @@
-//npm
-import { useState, useEffect } from "react";
-// components
-import About from "../components/templates/About/About";
-import Contact from "../components/templates/Contact/Contact";
-import Footer from "../components/templates/Footer/Footer";
-import Hero from "../components/templates/Hero/Hero";
-import Portfolio from "../components/templates/Portfolio/Portfolio";
-import Tech from "../components/templates/TechStack/Tech";
-// data
-import t_Data from "../data/tech_data";
-import c_Data from "../data/contact_data";
+import setColorTheme from "../scripts/setColorTheme";
 
-export default function Home({ projects }) {
-  const [technologies, setTechnologies] = useState([]);
-  const [contacts, setContacts] = useState([]);
+export default function Home() {
+  function setDark() {
+    return setColorTheme("dark");
+  }
+  function setGreen() {
+    return setColorTheme("green");
+  }
+  function setLight() {
+    return setColorTheme("light");
+  }
 
-  useEffect(() => {
-    setTechnologies(t_Data);
-  }, []);
+  const storedTheme = localStorage.getItem("theme");
 
-  useEffect(() => {
-    setContacts(c_Data);
-  }, []);
+  const defaultDark = storedTheme === "dark";
+  const defaultGreen = storedTheme === "green";
+
+  if (defaultDark) {
+    setDark();
+  }
+  if (defaultGreen) {
+    setGreen();
+  }
 
   return (
     <div>
-      <Hero />
-      <About />
-      <Portfolio projects={projects} />
-      <Tech technologies={technologies} />
-      <Contact contacts={contacts} />
-      <Footer />
+      <div className="content">
+        <h3>Multiple color provider</h3>
+      </div>
+      <div className="toggle-theme-wrapper">
+        <button onClick={setLight}>Light</button>
+        <button onClick={setDark}>Dark</button>
+        <button onClick={setGreen}>Green</button>
+      </div>
     </div>
   );
 }

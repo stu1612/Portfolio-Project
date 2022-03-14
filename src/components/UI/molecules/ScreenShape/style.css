@@ -1,8 +1,0 @@
-.shape-mobile {
-  display: grid;
-  width: min(95%, 90rem);
-  min-height: 100vh;
-  row-gap: 1.5rem;
-  align-content: center;
-  text-align: left;
-}
