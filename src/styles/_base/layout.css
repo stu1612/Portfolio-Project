@@ -33,6 +33,8 @@ li,
 span,
 p {
   font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 h1,
@@ -55,4 +57,12 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.primary-bg {
+  background: var(--primary-bg);
+}
+
+.secondary-bg {
+  background: var(--secondary-bg);
 }
