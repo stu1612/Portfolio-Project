@@ -1,0 +1,22 @@
+.svg-wrapper {
+  width: 20rem;
+  height: 20rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: var(--filter-color);
+}
+
+@media (min-width: 768px) {
+  .svg-wrapper {
+    width: 30rem;
+  }
+}
+@media (min-width: 1200px) {
+  .svg-wrapper {
+    width: 40rem;
+  }
+}

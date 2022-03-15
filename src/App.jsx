@@ -1,5 +1,6 @@
 //npm
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
 // screens
 import Home from "./screens/Home";
 
@@ -7,6 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/stu1612" element={<Home />} />
           {/* <Route path="/:title" element={<Modal  />} /> */}

@@ -2,3 +2,17 @@
 @import "./_base/colors.css";
 @import "./_base/layout.css";
 @import "./_base/typography.css";
+
+/* atoms */
+@import "./atoms/Buttons.css";
+@import "./atoms/Images.css";
+
+/* molecules */
+@import "./molecules/ThemeWrapper.css";
+
+/* organisms */
+
+@import "./organisms/Hero.css";
+@import "./organisms/Navbar.css";
+
+/* templates */

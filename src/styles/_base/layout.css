@@ -8,21 +8,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --font-color: red;
-  --bg-color: lightblue;
-}
-
-[data-theme="dark"] {
-  --font-color: lightblue;
-  --bg-color: red;
-}
-
-[data-theme="green"] {
-  --font-color: purple;
-  --bg-color: green;
-}
-
 html {
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
@@ -33,8 +18,14 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  background: var(--bg-color);
+  height: 100%;
+  width: 100%;
   color: var(--font-color);
+}
+
+.App {
+  height: 100%;
 }
 
 a,
@@ -50,27 +41,18 @@ h3 {
   font-family: "Secular One", sans-serif;
 }
 
-.theme-options {
+button,
+label,
+input {
+  outline: 0;
+  border: 0;
+}
+
+.section {
+  height: 50vh;
   width: 100%;
-  background-color: white;
-  height: 10vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-#theme-blue {
-  background-color: blue;
-}
-
-#theme-white {
-  background-color: white;
-}
-
-#theme-green {
-  background-color: green;
-}
-
-#theme-black {
-  background-color: black;
 }

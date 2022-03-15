@@ -1,7 +1,39 @@
 :root {
+  --font-color: #1b1b1b;
+  --nav-bg: #f1582e;
+  --bg-color: #b2fefa;
+  --bg-color-1: -webkit-linear-gradient(to right, #0ed2f7, #b2fefa);
+  --bg-color-2: linear-gradient(to right, #0ed2f7, #b2fefa);
+  --filter-color: invert(61%) sepia(90%) saturate(3749%) hue-rotate(335deg)
+    brightness(105%) contrast(91%);
+}
+
+[data-theme="dark"] {
+  --font-color: #f1582e;
+  --nav-bg: #ed1f6a;
+  --bg-color: #000;
+  --bg-color-1: -webkit-linear-gradient(to left, #434343, #000000);
+  --bg-color-2: linear-gradient(to left, #2b2a2a, #000000);
+  --filter-color: invert(17%) sepia(63%) saturate(6126%) hue-rotate(330deg)
+    brightness(101%) contrast(86%);
+}
+
+[data-theme="green"] {
+  --font-color: #fafafa;
+  --nav-bg: #ffcc33;
+  --bg-color: #1d976c;
+  --bg-color-1: -webkit-linear-gradient(to right, #1d976c, #93f9b9);
+  --bg-color-2: linear-gradient(to right, #1d976c, #93f9b9);
+
+  --filter-color: invert(88%) sepia(63%) saturate(5359%) hue-rotate(324deg)
+    brightness(99%) contrast(102%);
+}
+
+/* :root {
   --cl-black: #1b1b1b;
   --cl-green: #43d998;
-  --cl-yellow: #ffce30;
+  --cl-yellow: #ffcc33;
+  --cl-orange: #f46b45
   --cl-blue: #b1d3e3;
   --cl-white: #e7e7e7;
-}
+} */
