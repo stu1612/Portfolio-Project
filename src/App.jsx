@@ -1,8 +1,10 @@
 //npm
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./components/Navbar";
 // screens
 import Home from "./screens/Home";
+// components
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
           {/* <Route path="/:title" element={<Modal  />} /> */}
           <Route path="*" element={<Navigate to="/stu1612" replace />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

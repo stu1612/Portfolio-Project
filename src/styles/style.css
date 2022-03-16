@@ -11,8 +11,8 @@
 @import "./molecules/ThemeWrapper.css";
 
 /* organisms */
-
 @import "./organisms/Hero.css";
-@import "./organisms/Navbar.css";
 
 /* templates */
+@import "./templates/Grids.css";
+@import "./templates/Navbar.css";
