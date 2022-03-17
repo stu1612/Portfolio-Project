@@ -1,3 +1,4 @@
+//data
 import Data from "../data/contact";
 
 export default function Contact() {

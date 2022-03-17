@@ -1,13 +1,18 @@
 :root {
   --font-color: #1b1b1b;
   --link-color: #1b1b1b;
-  --header-bg: #f37518;
-  --nav-bg: #f35f15;
-  --primary-bg: #b2fefa;
-  --secondary-bg: #98f7fa;
-  --bg-color: #b2fefa;
-  --bg-color-1: -webkit-linear-gradient(to right, #0ed2f7, #b2fefa);
-  --bg-color-2: linear-gradient(to right, #0ed2f7, #b2fefa);
+  --header-bg: #4cb9f0;
+  --nav-bg: #4cb9f0;
+  --footer-bg: #2f80ed;
+  --primary-bg: #ffffff;
+  --secondary-bg: #ece9e6;
+  --bg-color: #ece9e6; /* fallback for old browsers */
+  --bg-color-1: -webkit-linear-gradient(
+    to right,
+    #ece9e6,
+    #ffffff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  --bg-color-2: linear-gradient(to right, #ece9e6, #ffffff);
   --filter-color: invert(61%) sepia(90%) saturate(3749%) hue-rotate(335deg)
     brightness(105%) contrast(91%);
   --drop-shadow: drop-shadow(1px 2px 14px rgb(180, 179, 179));
@@ -16,8 +21,12 @@
 [data-theme="dark"] {
   --font-color: #f0f0f0;
   --link-color: #fafafa;
-  --header-bg: #ec1667;
-  --nav-bg: #df1864;
+  /* --header-bg: #ec1667;
+  --nav-bg: #df1864; */
+  --header-bg: #f1582e;
+  --nav-bg: #f1582e;
+
+  --footer-bg: #eb6397;
   --primary-bg: #121212;
   --secondary-bg: #181818;
   --bg-color: #000;
@@ -35,6 +44,8 @@
   --primary-bg: #1d976c;
   --secondary-bg: #2f9e71;
   --nav-bg: #65cbf2;
+  --footer-bg: #a9e4fa;
+
   --bg-color: #1d976c;
   --bg-color-1: -webkit-linear-gradient(to right, #1d976c, #93f9b9);
   --bg-color-2: linear-gradient(to right, #1d976c, #93f9b9);

@@ -5,9 +5,9 @@
 }
 
 .primary {
-  background-color: blue;
+  background-color: var(--primary-bg);
 }
 
 .secondary {
-  background-color: yellow;
+  background-color: var(--header-bg);
 }

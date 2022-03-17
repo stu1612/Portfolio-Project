@@ -16,12 +16,12 @@ export default function Modal({ project, handleClose }) {
           <img src={require(`../assets/screenshots/${screenshot}`)} alt={alt} />
         </div>
         <div className="modal-content">
-          <p>{name}</p>
-          <p>{body}</p>
+          <p className="modal-p">{name}</p>
+          <p className="modal-p">{body}</p>
           <div className="pills-container">{pillItems}</div>
           <div className="button-container">
-            <button className="btn primary">Add</button>
-            <button className="btn secondary">DELETE</button>
+            <button className="btn primary">Visit website</button>
+            <button className="btn secondary">Git repository</button>
           </div>
         </div>
         <p className="close" onClick={handleClose}>
