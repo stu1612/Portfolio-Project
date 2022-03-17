@@ -1,0 +1,29 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.contact-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.contact-img svg {
+  transform: scale(3);
+  transform-origin: left;
+}
+
+.mobile-w-50 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .mobile-w-50 {
+    width: 50%;
+  }
+}

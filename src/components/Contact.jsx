@@ -1,31 +1,24 @@
-import React from "react";
+import Data from "../data/contact";
 
 export default function Contact() {
+  const contactItems = Data.map((item) => (
+    <div className="contact">
+      <div className="contact-img">{item.img}</div>
+      <p>{item.link}</p>
+    </div>
+  ));
   return (
     <section className="primary-bg" id="contact">
       <div className="layout">
-        <h2 className="h2-about">About</h2>
-        <div className="grid-layout grid-1">
-          <div className="grid-1_item-2">
-            <p>
-              Hi, I am Stu Bolderson, a frontend developer with experience
-              working with Javascript, React, React Native, GSAP, Framer Motion,
-              Sass, Gastby and some Python .. I come from the Red side of
-              Manchester and am now learning the skills and gaining the project
-              experience for me to join a company who is looking for an engaging
-              and passionate developer.
+        <h2 className="h2-about">Contact me</h2>
+        <div className="grid-layout grid-5">
+          <div>
+            <p className="mobile-w-50">
+              Here is my contact information if you are interested in starting a
+              collaboration
             </p>
           </div>
-          <div className="grid-1_item-1">
-            <p>
-              Hi, I am Stu Bolderson, a frontend developer with experience
-              working with Javascript, React, React Native, GSAP, Framer Motion,
-              Sass, Gastby and some Python .. I come from the Red side of
-              Manchester and am now learning the skills and gaining the project
-              experience for me to join a company who is looking for an engaging
-              and passionate developer.
-            </p>
-          </div>
+          <div>{contactItems}</div>
         </div>
       </div>
     </section>

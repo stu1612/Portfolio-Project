@@ -15,8 +15,8 @@ export default function Technologies() {
         <div className="grid-layout-2 grid-2">
           <div className="grid-2_item-1">
             <p>
-              Here are the projects I will be making during the Frontend course
-              with Novare Potential
+              Here are some of the technologies I already know and will be
+              starting to learn !
             </p>
           </div>
           <div className="grid-2_item-2 box">

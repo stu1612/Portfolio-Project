@@ -8,7 +8,6 @@
 }
 
 .tech-card {
-  /* height: 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;

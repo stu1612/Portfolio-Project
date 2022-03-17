@@ -14,6 +14,7 @@
 
 /* organisms */
 @import "./organisms/cards.css";
+@import "./organisms/contact.css";
 @import "./organisms/footer.css";
 @import "./organisms/hero.css";
 
