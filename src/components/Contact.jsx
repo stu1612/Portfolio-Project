@@ -3,11 +3,16 @@ import Data from "../data/contact";
 
 export default function Contact() {
   const contactItems = Data.map((item) => (
-    <div className="contact">
+    <div className="contact-item">
       <div className="contact-img">{item.img}</div>
-      <p>{item.link}</p>
+      {item.ahref ? (
+        <a href="mailto:stu.bolderson@aol.com">{item.link}</a>
+      ) : (
+        <p>{item.link}</p>
+      )}
     </div>
   ));
+
   return (
     <section className="primary-bg" id="contact">
       <div className="layout contact">

@@ -44,7 +44,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--footer-bg);
+  background-color: white;
+}
+
+.footer-icon {
+  margin: 0 1rem;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
