@@ -3,11 +3,11 @@ import img from "../assets/images/programmer.svg";
 
 export default function About() {
   return (
-    <section className="primary-bg" id="about">
-      <div className="layout">
-        <h2 className="h2-about">About</h2>
+    <section className="secondary-bg" id="about">
+      <div className="layout about">
+        <h2 className="h2">About</h2>
         <div className="grid-layout grid-1">
-          <div className="grid-1_item-2">
+          <div className="grid-1b">
             <p>
               Hi, I am Stu Bolderson, a frontend developer with experience
               working with Javascript, React, React Native, GSAP, Framer Motion,
@@ -24,7 +24,7 @@ export default function About() {
               great work.
             </p>
           </div>
-          <div className="w-100 grid-1_item-1 about-img">
+          <div className="w-100 grid-1a about-img">
             <img src={img} alt="jhjh" className="image" />
           </div>
         </div>

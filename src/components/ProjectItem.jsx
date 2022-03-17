@@ -15,18 +15,19 @@ export default function Project({ project }) {
     </div>
   );
 
-  const modal = showModal && (
-    <Modal project={project} handleClose={handleClose} />
-  );
+  const modal =
+    isActive && showModal ? (
+      <Modal project={project} toggleModal={toggleModal} />
+    ) : null;
 
   // functions
-  function handleClose() {
+  function toggleModal() {
     setShowModal(!showModal);
   }
 
   return (
-    <div className="card" onClick={handleClose}>
-      <div className="card-wrapper">
+    <div className="project-item" onClick={toggleModal}>
+      <div className="item-wrapper">
         {comingSoon}
         <img
           src={require(`../assets/images/cards/${image}`)}

@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 
-export default function Modal({ project, handleClose }) {
+export default function Modal({ project, toggleModal }) {
   const { name, body, alt, screenshot, pills } = project;
 
   const pillItems = pills.map((pill, index) => (
@@ -24,7 +24,7 @@ export default function Modal({ project, handleClose }) {
             <button className="btn secondary">Git repository</button>
           </div>
         </div>
-        <p className="close" onClick={handleClose}>
+        <p className="close" onClick={toggleModal}>
           X
         </p>
       </div>

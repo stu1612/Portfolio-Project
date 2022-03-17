@@ -1,3 +1,28 @@
+/* font colors */
+.hero h1,
+.projects h2,
+.contact h2 {
+  color: var(--heading-color-1);
+}
+
+.about h2,
+.tech h2 {
+  color: var(--heading-color-2);
+}
+
+p {
+  color: var(--font-color);
+}
+
+/* .font-color-1 {
+  color: font-color-1;
+}
+
+.font-color-2 {
+  color: font-color-2;
+} */
+
+/* font sizes */
 h1 {
   font-size: 5.6rem;
   text-align: center;
@@ -32,6 +57,13 @@ a {
   h1 {
     font-size: clamp(3.6rem, 5vw, 10.5rem);
   }
+  h2 {
+    margin-bottom: 4rem;
+  }
+  h1,
+  h2 {
+    letter-spacing: 5px;
+  }
   a {
     font-size: 14px;
     line-height: 21px;
@@ -50,8 +82,5 @@ a {
     font-size: 1.7rem;
     line-height: 2.7rem;
     letter-spacing: 0.6px;
-  }
-  .h2-about {
-    margin-bottom: 3rem;
   }
 }

@@ -5,19 +5,17 @@
 
 /* atoms */
 @import "./atoms/buttons.css";
-@import "./atoms/comingSoon.css";
-@import "./atoms/images.css";
 
 /* molecules */
-@import "./molecules/modal.css";
+@import "./molecules/comingSoon.css";
 @import "./molecules/theme.css";
 
 /* organisms */
-@import "./organisms/cards.css";
 @import "./organisms/contact.css";
-@import "./organisms/footer.css";
-@import "./organisms/hero.css";
+@import "./organisms/images.css";
+@import "./organisms/modal.css";
 
 /* templates */
 @import "./templates/grids.css";
 @import "./templates/navbar.css";
+@import "./templates/sections.css";

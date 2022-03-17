@@ -10,8 +10,8 @@ export default function Contact() {
   ));
   return (
     <section className="primary-bg" id="contact">
-      <div className="layout">
-        <h2 className="h2-about">Contact me</h2>
+      <div className="layout contact">
+        <h2 className="h2">Contact me</h2>
         <div className="grid-layout grid-5">
           <div>
             <p className="mobile-w-50">

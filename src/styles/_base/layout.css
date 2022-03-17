@@ -41,6 +41,9 @@ h1,
 h2,
 h3 {
   font-family: "Secular One", sans-serif;
+  color: var(--heading-color);
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 button,
@@ -67,6 +70,14 @@ input {
 
 .secondary-bg {
   background: var(--secondary-bg);
+}
+
+.active {
+  pointer-events: auto;
+}
+
+.disable {
+  pointer-events: none;
 }
 
 @media (min-width: 760px) {

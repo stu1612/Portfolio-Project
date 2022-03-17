@@ -17,17 +17,17 @@
     "item2";
 }
 
-.grid-1_item-1 {
+.grid-1a {
   grid-area: item1;
 }
-.grid-1_item-2 {
+.grid-1b {
   grid-area: item2;
 }
 
-.grid-2_item-1 {
+.grid-2a {
   grid-area: item1;
 }
-.grid-2_item-2 {
+.grid-2b {
   grid-area: item2;
 }
 
