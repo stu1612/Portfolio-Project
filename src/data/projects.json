@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "isActive": true,
+    "title": "eika-shopping-app",
+    "image": "eika_ci.jpg",
+    "screenshot": "eika_sh.png",
+    "alt": "sofa, table, chiars design",
+    "name": "Eika Shopping App",
+    "body": "This was the start of my journey with Novare - showcasing my knowledge of React functions",
+    "repo": "https://github.com/stu1612/eika",
+    "url": "https://eika.netlify.app/",
+    "pills": [
+      "React",
+      "Context API",
+
+      "Context API",
+      "Context API",
+      "Context API",
+      "CSS"
+    ]
+  },
+  {
+    "id": 2,
+    "isActive": true,
+    "title": "restaurant-app",
+    "image": "vegan_ci.jpg",
+    "screenshot": "eika_sh.png",
+    "alt": "go vegan sign on window",
+    "name": "Vegan Restaurant App",
+    "body": "This is text from Project Three",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  },
+  {
+    "id": 3,
+    "isActive": false,
+    "title": "package-tracker",
+    "image": "tracker_ci.jpg",
+    "screenshot": "",
+    "alt": "box being packed",
+    "name": "Package Tracker",
+    "body": "This is text from Project Three",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  },
+  {
+    "id": 4,
+    "isActive": false,
+    "title": "todo-tdd",
+    "image": "todo_ci.jpg",
+    "screenshot": "",
+    "alt": "todo book with pencil",
+    "name": "TODO TDD",
+    "body": "This is text from Project Four",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  },
+  {
+    "id": 5,
+    "isActive": false,
+    "title": "e-commerce",
+    "image": "ecommerce_ci.jpg",
+    "screenshot": "",
+    "alt": "person looking at ecommerce inforamtion on laptop",
+    "name": "E-Commerce",
+    "body": "This is text from Project Five",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  },
+  {
+    "id": 6,
+    "isActive": false,
+    "title": "bbq-restaurant",
+    "image": "bbq_ci.jpg",
+    "screenshot": "",
+    "alt": "cooked bbq ribs displayed on table",
+    "name": "BBQ Restaurant",
+    "body": "This is text from Project Six",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  },
+  {
+    "id": 7,
+    "isActive": false,
+    "title": "lms",
+    "image": "lms_ci.jpg",
+    "screenshot": "",
+    "alt": "learning station with laptop, book, pencils displayed on table",
+    "name": "LMS",
+    "body": "This is text from Project Seven",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  },
+  {
+    "id": 8,
+    "isActive": false,
+    "title": "netflix",
+    "image": "netflix_ci.jpg",
+    "screenshot": "",
+    "alt": "netflix red logo with black background",
+    "name": "Netflix",
+    "body": "This is text from Project Eight",
+    "repo": "",
+    "url": "",
+    "pills": ["React"]
+  }
+]

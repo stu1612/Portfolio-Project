@@ -3,7 +3,7 @@ import img from "../assets/images/programmer.svg";
 
 export default function About() {
   return (
-    <div className="primary-bg">
+    <section className="primary-bg" id="about">
       <div className="layout">
         <h2 className="h2-about">About</h2>
         <div className="grid-layout grid-1">
@@ -29,6 +29,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

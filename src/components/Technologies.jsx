@@ -1,8 +1,15 @@
-import React from "react";
+// data
+import Data from "../data/data";
 
 export default function Technologies() {
+  const technolgies = Data.map((tech) => (
+    <div className="tech-card" key={tech.id}>
+      <div className="tech-img">{tech.img}</div>
+      <span>{tech.title}</span>
+    </div>
+  ));
   return (
-    <div className="primary-bg">
+    <section className="primary-bg" id="tech">
       <div className="layout">
         <h2 className="h2-about">Technologies</h2>
         <div className="grid-layout-2 grid-2">
@@ -13,23 +20,10 @@ export default function Technologies() {
             </p>
           </div>
           <div className="grid-2_item-2 box">
-            <div className="grid-4">
-              <div className="tech tech1"> 1</div>
-              <div className="tech tech2"> 2</div>
-              <div className="tech tech3"> 3</div>
-              <div className="tech tech4"> 4</div>
-              <div className="tech tech5"> 5</div>
-              <div className="tech tech6"> 6</div>
-              <div className="tech tech7"> 8</div>
-              <div className="tech tech7"> 9</div>
-              <div className="tech tech7"> 10</div>
-              <div className="tech tech7"> 11</div>
-              <div className="tech tech7"> 12</div>
-              <div className="tech tech7"> 13</div>
-            </div>
+            <div className="grid-4">{technolgies}</div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

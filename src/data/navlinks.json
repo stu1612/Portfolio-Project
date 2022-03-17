@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "class": "link-one",
+    "href": "#about",
+    "name": "About"
+  },
+  {
+    "id": 2,
+    "class": "link-two",
+    "href": "#projects",
+    "name": "Projects"
+  },
+  {
+    "id": 3,
+    "class": "link-three",
+    "href": "#hero",
+    "name": "Home"
+  },
+  {
+    "id": 4,
+    "class": "link-four",
+    "href": "#tech",
+    "name": "Tech"
+  },
+  {
+    "id": 5,
+    "class": "link-five",
+    "href": "#contact",
+    "name": "Contact"
+  }
+]

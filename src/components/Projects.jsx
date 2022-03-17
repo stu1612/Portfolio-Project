@@ -1,6 +1,15 @@
+// components
+import Project from "./Project";
+// data
+import projects from "../data/projects.json";
+
 export default function Projects() {
+  // properties
+  const projectItems = projects.map((project) => (
+    <Project key={project.id} project={project} />
+  ));
   return (
-    <div className="secondary-bg">
+    <section className="secondary-bg" id="projects">
       <div className="layout">
         <h2 className="h2-about">Projects</h2>
         <div className="grid-layout-2 grid-2">
@@ -11,18 +20,10 @@ export default function Projects() {
             </p>
           </div>
           <div className="grid-2_item-2 box">
-            <div className="grid-3">
-              <div className="card card1">Card 1</div>
-              <div className="card card2">Card 2</div>
-              <div className="card card3">Card 3</div>
-              <div className="card card4">Card 4</div>
-              <div className="card card5">Card 5</div>
-              <div className="card card6">Card 6</div>
-              <div className="card card7">Card 7</div>
-            </div>
+            <div className="grid-3">{projectItems}</div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

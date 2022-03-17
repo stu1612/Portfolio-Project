@@ -2,38 +2,21 @@
 import scrollToLocation from "../scripts/scrollToLocation";
 // components
 import ColorThemeSwitch from "./ColorThemeSwitch";
+// data
+import navlinks from "../data/navlinks.json";
 
 export default function Navbar() {
+  const links = navlinks.map((link) => (
+    <li key={link.id} className={`link ${link.class}`}>
+      <a href={`${link.href}`} onClick={scrollToLocation}>
+        {link.name}
+      </a>
+    </li>
+  ));
   return (
     <header>
       <nav>
-        <ul>
-          <li className="link link-one">
-            <a href="/#about" onClick={scrollToLocation}>
-              About
-            </a>
-          </li>
-          <li className="link link-two">
-            <a href="/#projects" onClick={scrollToLocation}>
-              Projects
-            </a>
-          </li>
-          <li className="link link-three">
-            <a href="/#hero" onClick={scrollToLocation}>
-              Home
-            </a>
-          </li>
-          <li className="link link-four">
-            <a href="/#technologies" onClick={scrollToLocation}>
-              Tech
-            </a>
-          </li>
-          <li className="link link-five">
-            <a href="/#contact" onClick={scrollToLocation}>
-              Contact
-            </a>
-          </li>
-        </ul>
+        <ul>{links}</ul>
         <ColorThemeSwitch />
       </nav>
     </header>

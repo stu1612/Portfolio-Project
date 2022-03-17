@@ -1,1 +1,13 @@
+.btn {
+  height: 36px;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
 
+.primary {
+  background-color: blue;
+}
+
+.secondary {
+  background-color: yellow;
+}

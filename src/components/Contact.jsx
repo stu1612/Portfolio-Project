@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="primary-bg">
+    <section className="primary-bg" id="contact">
       <div className="layout">
         <h2 className="h2-about">About</h2>
         <div className="grid-layout grid-1">
@@ -28,6 +28,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

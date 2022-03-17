@@ -4,15 +4,19 @@
 @import "./_base/typography.css";
 
 /* atoms */
-@import "./atoms/Buttons.css";
-@import "./atoms/Images.css";
+@import "./atoms/buttons.css";
+@import "./atoms/comingSoon.css";
+@import "./atoms/images.css";
 
 /* molecules */
-@import "./molecules/ThemeWrapper.css";
+@import "./molecules/modal.css";
+@import "./molecules/theme.css";
 
 /* organisms */
-@import "./organisms/Hero.css";
+@import "./organisms/cards.css";
+@import "./organisms/footer.css";
+@import "./organisms/hero.css";
 
 /* templates */
-@import "./templates/Grids.css";
-@import "./templates/Navbar.css";
+@import "./templates/grids.css";
+@import "./templates/navbar.css";

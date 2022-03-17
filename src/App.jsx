@@ -1,23 +1,22 @@
-//npm
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// screens
-import Home from "./screens/Home";
 // components
-import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
 
 export default function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/stu1612" element={<Home />} />
-          {/* <Route path="/:title" element={<Modal  />} /> */}
-          <Route path="*" element={<Navigate to="/stu1612" replace />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Technologies />
+      <Contact />
+      <Footer />
     </div>
   );
 }

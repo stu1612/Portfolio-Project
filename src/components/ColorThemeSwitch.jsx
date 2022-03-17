@@ -1,3 +1,4 @@
+// script
 import setColorTheme from "../scripts/setColorTheme";
 
 export default function ColorThemeSwitch() {
@@ -26,9 +27,7 @@ export default function ColorThemeSwitch() {
   return (
     <div className="theme-wrapper">
       <button onClick={setLight} className="color-theme light" />
-
       <button onClick={setDark} className="color-theme dark" />
-
       <button onClick={setGreen} className="color-theme green" />
     </div>
   );
