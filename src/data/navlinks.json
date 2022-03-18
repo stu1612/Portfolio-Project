@@ -3,30 +3,35 @@
     "id": 1,
     "class": "link-one",
     "href": "#about",
+    "img": "",
     "name": "About"
   },
   {
     "id": 2,
     "class": "link-two",
     "href": "#projects",
+    "img": "",
     "name": "Projects"
   },
   {
     "id": 3,
     "class": "link-three",
     "href": "#hero",
-    "name": "Home"
+    "img": "rocket.png",
+    "name": ""
   },
   {
     "id": 4,
     "class": "link-four",
     "href": "#tech",
+    "img": "",
     "name": "Tech"
   },
   {
     "id": 5,
     "class": "link-five",
     "href": "#contact",
+    "img": "",
     "name": "Contact"
   }
 ]

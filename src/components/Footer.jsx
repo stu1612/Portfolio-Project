@@ -11,15 +11,14 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin size={28} className="footer-icon" />
+          <FaLinkedin size={28} color="#0e76a8" className="footer-icon" />
         </a>
-        <a href="mailto:"></a>
         <a
           href="https://github.com/stu1612"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub size={28} className="footer-icon" />
+          <FaGithub size={28} color="#000" className="footer-icon" />
         </a>
       </div>
       <p>&#169; 2022 | Stuart Bolderson</p>

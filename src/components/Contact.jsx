@@ -3,7 +3,7 @@ import Data from "../data/contact";
 
 export default function Contact() {
   const contactItems = Data.map((item) => (
-    <div className="contact-item">
+    <div className="contact-item" key={item.id}>
       <div className="contact-img">{item.img}</div>
       {item.ahref ? (
         <a href="mailto:stu.bolderson@aol.com">{item.link}</a>

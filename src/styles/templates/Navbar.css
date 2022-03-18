@@ -1,6 +1,6 @@
 header {
   z-index: 10;
-  background: var(--nav-color);
+  background: var(--header-color);
   width: 100%;
   height: 10rem;
   position: fixed;
@@ -12,7 +12,7 @@ header {
 nav {
   height: 80%;
   width: min(90%, 1200px);
-  background: var(--dark-color);
+  background: var(--nav-color);
   display: flex;
   justify-content: center;
   align-items: center;

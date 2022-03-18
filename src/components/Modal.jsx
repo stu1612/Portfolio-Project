@@ -16,7 +16,7 @@ export default function Modal({ project, toggleModal }) {
           <img src={require(`../assets/screenshots/${screenshot}`)} alt={alt} />
         </div>
         <div className="modal-content">
-          <p className="modal-p">{name}</p>
+          <h3>{name}</h3>
           <p className="modal-p">{body}</p>
           <div className="pills-container">{pillItems}</div>
           <div className="button-container">

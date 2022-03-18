@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.footer p {
+  color: rgb(122, 122, 122);
+}
+
 @media (min-width: 768px) {
   .project-item {
     height: 250px;

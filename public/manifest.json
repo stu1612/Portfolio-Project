@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo-3x.png",
+      "src": "rocket.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo-5x.png",
+      "src": "rocket.png",
       "type": "image/png",
       "sizes": "512x512"
     }
