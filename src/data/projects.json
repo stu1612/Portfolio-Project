@@ -10,28 +10,20 @@
     "body": "This was the start of my journey with Novare - showcasing my knowledge of React functions",
     "repo": "https://github.com/stu1612/eika",
     "url": "https://eika.netlify.app/",
-    "pills": [
-      "React",
-      "Context API",
-
-      "Context API",
-      "Context API",
-      "Context API",
-      "CSS"
-    ]
+    "pills": ["React", "Context API", "CSS"]
   },
   {
     "id": 2,
     "isActive": true,
     "title": "restaurant-app",
     "image": "vegan_ci.jpg",
-    "screenshot": "eika_sh.png",
+    "screenshot": "vegan_sh.png",
     "alt": "go vegan sign on window",
     "name": "Vegan Restaurant App",
-    "body": "This is text from Project Three",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
+    "body": "React Router application where the user can navigate to multiple pages.",
+    "repo": "https://github.com/stu1612/Vegan-Restaurant",
+    "url": "https://vegan-restaurant-9a79a.web.app/",
+    "pills": ["React", "RouterV6", "CSS", "JSON"]
   },
   {
     "id": 3,
