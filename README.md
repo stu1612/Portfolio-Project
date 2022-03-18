@@ -4,24 +4,19 @@ This is my first assignment for Novare Potential. My assignment was to create a 
 
 Attached are my planning resources.
 
-### `Deployed Website`(https://stu1612.netlify.app/stu1612)
+### `Deployed Website`(https://portfolio-c7ce5.web.app/)
 
 ## Documentaion
 
-- [Component Tree] (https://whimsical.com/component-tree-QGDoEZGBqsZdTsXAd6CAjh@3CRerdhrAw7pzaWxqzqTgGCh)
-- [Figma Designs] (https://www.figma.com/file/Db59MGuBYWe0A08fZlESyI/Portfolio-Project?node-id=0%3A1)
-- [Project Planning] (https://docs.google.com/document/d/1Ol_rIscluOc8bKfZJIZiZmxjHT0dmxSu2GC5uZ9eIoA/edit?usp=sharing)
-- [Portfolio Product Spreadsheet] (https://docs.google.com/spreadsheets/d/1o37PrPlje4dZZFiyPmTBmvBODzCpZQ9YNDTqd1s3EHk/edit?usp=sharing)
-
 ## Installation
 
-## `git clone` [https://github.com/stu1612/Portfolio-Project.git](https://github.com/stu1612/Portfolio-Project.git)
+- `git clone` [https://github.com/stu1612/Portfolio-Project.git](https://github.com/stu1612/Portfolio-Project.git)
 
-## `cd Portflio-Project`
+- `cd Portfolio-Project`
 
-## `yarn install`
+- `yarn install`
 
-## `yarn start`
+- `yarn start`
 
 ## Tech/framework used
 
