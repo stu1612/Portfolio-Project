@@ -20,8 +20,22 @@ export default function Modal({ project, toggleModal }) {
           <p className="modal-p">{body}</p>
           <div className="pills-container">{pillItems}</div>
           <div className="button-container">
-            <button className="btn primary">Visit website</button>
-            <button className="btn secondary">Git repository</button>
+            <a
+              href="https://vegan-restaurant-9a79a.web.app/"
+              target="_blank"
+              className="btn primary"
+              rel="noreferrer"
+            >
+              Visit website
+            </a>
+            <a
+              href="https://github.com/stu1612/Vegan-Restaurant"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn secondary"
+            >
+              Git repository
+            </a>
           </div>
         </div>
         <p className="close" onClick={toggleModal}>
