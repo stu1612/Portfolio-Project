@@ -11,17 +11,17 @@ export default function About() {
             <p>
               Hi, I am Stu Bolderson, a frontend developer with experience
               working with Javascript, React, React Native, GSAP, Framer Motion,
-              Sass, Gastby and some Python .. I come from the Red side of
-              Manchester and am now learning the skills and gaining the project
-              experience for me to join a company who is looking for an engaging
-              and passionate developer.
+              Sass, Gatsby and some Python .. I am currently studying a
+              Intensive Frontend Programme with Novare Potential where I will be
+              learning to make solid, clean, well written Functional React
+              applications combined with Sass, Typescript, Testing and Firebase.
             </p>
             <p className="mt-2">
-              I have mostly been working with React but I have no preferences in
-              what I do - I love coding and learning new things, and with the
-              software architeacture skills I am learnign with Novare I am
-              confident my process and energy will be well placed to produce
-              great work.
+              Apart from coding, i love sports, exercise and cycling. I come
+              from the Red side of Manchester so I am a massive Man Utd fan ! I
+              enjoy hanging out at Wed Dev meet up events, going out for a nice
+              meal and catching up with friends and family for a well earned
+              Beer !
             </p>
           </div>
           <div className="w-100 grid-1a about-img">
