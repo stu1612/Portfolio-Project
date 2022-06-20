@@ -27,43 +27,31 @@
   },
   {
     "id": 3,
-    "isActive": false,
+    "isActive": true,
     "title": "package-tracker",
     "image": "tracker_ci.jpg",
-    "screenshot": "",
+    "screenshot": "tracker_sh.png",
     "alt": "box being packed",
     "name": "Package Tracker",
-    "body": "This is text from Project Three",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
+    "body": "React project fetching data from an API",
+    "repo": "https://github.com/stu1612/Package-Tracker.git",
+    "url": "https://package-tracker-c7eca.web.app/",
+    "pills": ["React", "RouterV6", "CSS", "JSON", "Custom Hook", "i18n", "API"]
   },
   {
     "id": 4,
-    "isActive": false,
+    "isActive": true,
     "title": "todo-tdd",
     "image": "todo_ci.jpg",
-    "screenshot": "",
+    "screenshot": "tdd_sh.png",
     "alt": "todo book with pencil",
     "name": "TODO TDD",
-    "body": "This is text from Project Four",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
+    "body": "First project utilising React Testing Library",
+    "repo": "https://github.com/stu1612/React-Testing-App.git",
+    "url": "https://tdd-app-sb1.web.app/",
+    "pills": ["React", "React Testing"]
   },
-  {
-    "id": 5,
-    "isActive": false,
-    "title": "e-commerce",
-    "image": "ecommerce_ci.jpg",
-    "screenshot": "",
-    "alt": "person looking at ecommerce inforamtion on laptop",
-    "name": "E-Commerce",
-    "body": "This is text from Project Five",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
-  },
+
   {
     "id": 6,
     "isActive": false,
@@ -79,28 +67,46 @@
   },
   {
     "id": 7,
-    "isActive": false,
+    "isActive": true,
     "title": "lms",
     "image": "lms_ci.jpg",
-    "screenshot": "",
+    "screenshot": "lms_sh.png",
     "alt": "learning station with laptop, book, pencils displayed on table",
     "name": "LMS",
-    "body": "This is text from Project Seven",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
+    "body": "React App with a Firebase database, authentication rules and CRUD functionality",
+    "repo": "https://github.com/stu1612/lms-app-sb1.git",
+    "url": "https://lms-app-sb1.web.app/",
+    "pills": [
+      "React",
+      "CSS",
+      "RouterV6",
+      "Context API",
+      "JSON",
+      "Firebase Storage",
+      "Firebase"
+    ]
   },
   {
     "id": 8,
-    "isActive": false,
+    "isActive": true,
     "title": "netflix",
     "image": "netflix_ci.jpg",
-    "screenshot": "",
+    "screenshot": "netflix_sh.png",
     "alt": "netflix red logo with black background",
     "name": "Netflix",
-    "body": "This is text from Project Eight",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
+    "body": "Its a Netflix App - with all the fun things learnt these past 3 months",
+    "repo": "https://github.com/stu1612/netflix-app-sb1.git",
+    "url": "https://netflix-app-sb1.web.app/",
+    "pills": [
+      "React",
+      "SCSS",
+      "RouterV6",
+      "Context API",
+      "Custom React Hooks",
+      "JSON",
+      "Firebase Storage",
+      "Firebase Authentication",
+      "Firebase"
+    ]
   }
 ]

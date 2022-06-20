@@ -1,7 +1,9 @@
 import ReactDOM from "react-dom";
 
 export default function Modal({ project, toggleModal }) {
-  const { name, body, alt, screenshot, pills } = project;
+  console.log(project);
+
+  const { name, body, alt, screenshot, pills, url, repo } = project;
 
   const pillItems = pills.map((pill, index) => (
     <li key={index} className="pill">
@@ -21,7 +23,7 @@ export default function Modal({ project, toggleModal }) {
           <div className="pills-container">{pillItems}</div>
           <div className="button-container">
             <a
-              href="https://vegan-restaurant-9a79a.web.app/"
+              href={url}
               target="_blank"
               className="btn primary"
               rel="noreferrer"
@@ -29,7 +31,7 @@ export default function Modal({ project, toggleModal }) {
               Visit website
             </a>
             <a
-              href="https://github.com/stu1612/Vegan-Restaurant"
+              href={repo}
               target="_blank"
               rel="noopener noreferrer"
               className="btn secondary"
