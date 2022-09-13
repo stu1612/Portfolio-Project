@@ -21,9 +21,17 @@
     "alt": "go vegan sign on window",
     "name": "Vegan Restaurant App",
     "body": "React Router application where the user can navigate to multiple pages.",
-    "repo": "https://github.com/stu1612/Vegan-Restaurant",
-    "url": "https://vegan-restaurant-9a79a.web.app/",
-    "pills": ["React", "RouterV6", "CSS", "JSON"]
+    "repo": "https://github.com/stu1612/vegn-tsx-sb1.git",
+    "url": "https://vegan-tsx.web.app/",
+    "pills": [
+      "React",
+      "RouterV6",
+      "Sass",
+      "JSON",
+      "Typescript",
+      "Framer Motion",
+      "Firebase"
+    ]
   },
   {
     "id": 3,
@@ -61,9 +69,18 @@
     "alt": "cooked bbq ribs displayed on table",
     "name": "BBQ Restaurant",
     "body": "This is text from Project Six",
-    "repo": "",
-    "url": "",
-    "pills": ["React"]
+    "repo": "https://github.com/stu1612/bbq-proj-sb1.git",
+    "url": "https://bbq-proj-sb1.web.app/",
+    "pills": [
+      "React",
+      "Firebase Auth",
+      "Firebase Storage",
+      "Firebase",
+      "React-Leaflet",
+      "React-Router-Dom",
+      "Sass",
+      "FontAwesome"
+    ]
   },
   {
     "id": 7,
